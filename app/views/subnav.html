@@ -1,0 +1,5 @@
+<div ng-show="section.routes.length > 0" class="list-group">
+  <a ng-repeat="item in section.routes" ng-href="#/{{section.label}}/{{item.label}}" class="list-group-item {{item.class}}" >
+	{{item.name}}{{item.tagline}}
+	</a>
+</div>
