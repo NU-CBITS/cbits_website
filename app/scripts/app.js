@@ -1,5 +1,21 @@
 'use strict';
 
+
+$(document).ready(function(){$('#sidebar').affix({
+      offset: {
+        top: 230,
+        bottom: 100
+      }
+}); 
+$('#midCol').affix({
+      offset: {
+        top: 230,
+        bottom: 100
+      }
+}); 
+});
+
+
 /**
  * @ngdoc overview
  * @name paveApp
@@ -60,7 +76,7 @@ angular
     $rootScope.footer = 'Powered by CBITs';
     $rootScope.siteName = 'CBITs';
     $rootScope.appVersion = '0.1.4';
-    $rootScope.dataIO = 'https://pave.firebaseio.com';
+    // $rootScope.dataIO = 'https://pave.firebaseio.com';
     
 
     $rootScope.userLoggedIn = function(){ 

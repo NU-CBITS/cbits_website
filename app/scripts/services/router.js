@@ -8,7 +8,7 @@
  * Service in the paveApp.
  */
 angular.module('paveApp')
-  .service('router', function ($filter) {
+  .service('Router', function ($filter) {
 
   	var contents = {};
 
@@ -18,17 +18,24 @@ angular.module('paveApp')
     		{ label:'home',name:'Home', tagline:'', icon:''},
      		{ label:'problems',name:'Problems', tagline:'', icon:''},
      		{ label:'projects',name:'Projects', tagline:'', icon:''},
-     		{ label:'people',name:'People', tagline:'', icon:''}
+     		{ label:'collaborations',name:'Collaborations', tagline:'', icon:''},
+            { label:'technologies',name:'Technologies', tagline:'', icon:''},
+            { label:'blog',name:'Blog', tagline:'', icon:''}
+
     	]},
     	{
-    		label:'research', name:'Research', tagline:'Academic ', icon:'', 
+    		label:'research', name:'Research', tagline:'Academic Things', icon:'', 
     		routes:[
-    		{ label:'home',name:'Home', tagline:'', icon:''}
+    	   	{ label:'home',name:'Home', tagline:'', icon:''},
+            { label:'people',name:'People', tagline:'', icon:''}
+
     	]},
     	{
     		label:'clinical', name:'Clinical', tagline:'Ongoing CBITs Trials', icon:'', 
     		routes:[
-    		{ label:'home',name:'Home', tagline:'', icon:''}
+    		{ label:'home',name:'Home', tagline:'', icon:''},
+            { label:'people',name:'People', tagline:'', icon:''}
+
     	]}
     ];
 

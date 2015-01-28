@@ -1,1 +1,167 @@
-<p>This is the clinical view.</p>
+<div ng-include src="'views/header.html'"></div>
+<div class="container">
+	<div class="no-gutter row">
+      		<!-- left side column -->
+  			<div class="col-md-2">
+              	<div class="panel panel-default" id="sidebar">
+                <div class="panel-heading" style="background-color:#888;color:#fff;"></div> 
+                <div class="panel-body">
+
+
+      			<ul class="nav nav-stacked">
+                <li><a ng-repeat="item in section.routes" ng-href="#/{{section.label}}/{{item.label}}" >
+                    {{item.name}}{{item.tagline}}
+                   </a>
+                 </li>
+				    </ul>
+               <!--  <div class="accordion" id="accordion2">
+                    <div class="accordion-group">
+                        <div class="accordion-heading">
+                            <a class="accordion-toggle" data-toggle="collapse" data-parent="#accordion2" href="#collapseOne">
+                                Accordion
+                            </a>
+                        </div>
+                        <div id="collapseOne" class="accordion-body collapse in">
+                            <div class="accordion-inner">
+                                Content here for links, ads, etc.. 
+                            </div>
+                        </div>
+                    </div>
+                    <div class="accordion-group">
+                            <div class="accordion-heading">
+                                <a class="accordion-toggle" data-toggle="collapse" data-parent="#accordion2" href="#collapseTwo">
+                                    Accordion
+                                </a>
+                            </div>
+                            <div id="collapseTwo" class="accordion-body collapse">
+                                <div class="accordion-inner">
+                                    Another collapse panel. Content here for links, ads, etc.. 
+                                </div>
+                            </div>
+                        </div>
+               	</div>-->
+                  
+                  <hr>
+
+                <div class="col col-span-12">
+                  <i class="icon-2x icon-facebook"></i>&nbsp;
+                  <i class="icon-2x icon-twitter"></i>&nbsp;
+                  <i class="icon-2x icon-linkedin"></i>&nbsp;
+                  <i class="icon-2x icon-pinterest"></i>
+                </div>
+                
+                </div><!--/panel body-->
+              </div><!--/panel-->
+      		</div><!--/end left column-->
+      			
+      		<!--mid column-->
+      		<div class="col-md-3">
+              <div class="panel" id="midCol">
+                <div class="panel-heading" style="background-color:#555;color:#eee;"></div> 
+                <div class="panel-body">
+                  
+<!--                   <img class="img-responsive" src="//placehold.it/300/77CCDD/66BBCC">
+ -->                  
+                  <div class="well">
+                          <img src="http://www.preventivemedicine.northwestern.edu/images/mohr-lab-sidebar.png" class="img-responsive">
+                          <h3><a href="http://getbootstrap.com">Featured Faculty</a></h3>
+                          <h4>David Mohr, PhD</h4>
+                          <p>is the Director of the Center for Behavioral Intervention Technologies. He started it with a small grant to explore cogniti
+                          </p>
+                          <p><a href="http://www.bootply.com/bootstrap-3-migration-guide" target="ext">Read more...</a></p>
+                  </div>
+                  
+                  <hr>
+                  
+                   
+                  <h3>Our Team</h3>
+                  
+                  <h5 ng-repeat="person in staff"><a ng-click='personModal()'><i class="glyphicon glyphicon-user"></i> {{person.firstName}} {{person.lastName}}</a></h5>
+                
+                  <hr>  
+                  
+                  <img class="img-responsive" src="//placehold.it/300x200/FFF">    
+                  
+                  <div class="media">
+                    <a class="pull-left" href="#">
+                      <img class="media-object" src="http://placehold.it/80/F0F0F0">
+                    </a>
+                    <div class="media-body">
+                      <h5 class="media-heading"><a href="/tagged/modal" target="ext" class="pull-right"><i class="glyphicon glyphicon-share"></i></a> <a href="#"><strong>Modal</strong></a></h5>
+                      <small>Examples using the Bootstrap modal.</small><br>
+                      <span class="badge">87</span>
+                    </div>
+                  </div>
+                  <div class="media">
+                    <a class="pull-left" href="#">
+                      <img class="media-object" src="http://placehold.it/80/F0F0F0">
+                    </a>
+                    <div class="media-body">
+                      <h5 class="media-heading"><a href="/tagged/slider" target="ext" class="pull-right"><i class="glyphicon glyphicon-share"></i></a> <a href="#"><strong>Carousel</strong></a></h5>
+                      <small>How to use the Bootstrap slider.</small><br>
+                      <span class="badge">322</span>
+                    </div>
+                  </div>
+                  <div class="media">
+                    <a class="pull-left" href="#">
+                      <img class="media-object" src="http://placehold.it/80/F0F0F0">
+                    </a>
+                    <div class="media-body">
+                      <h5 class="media-heading"><a href="/tagged/typography" target="ext" class="pull-right"><i class="glyphicon glyphicon-share"></i></a> <a href="#"><strong>Typography</strong></a></h5>
+                      <small>See the various textual elements and options.</small><br>
+                      <span class="badge">44</span>
+                    </div>
+                  </div>
+                  <div class="media">
+                    <a class="pull-left" href="#">
+                      <img class="media-object" src="http://placehold.it/80/F0F0F0">
+                    </a>
+                    <div class="media-body">
+                      <h5 class="media-heading"><a href="/tagged/media" target="ext" class="pull-right"><i class="glyphicon glyphicon-share"></i></a> <a href="#"><strong>@Media</strong></a></h5>
+                      <small>Use @media queries to get the layout you want.</small><br>
+                      <span class="badge">119</span>
+                    </div>
+                 </div>
+                  
+               </div> 
+               </div><!--/panel-->
+      		</div><!--/end mid column-->
+      		
+      		<!-- right content column-->
+      		<div class="col-md-7" id="content">
+            	<div class="panel">
+    			<div class="panel-heading" style="background-color:#111;color:#fff;">Top Stories</div>   
+              	<div class="panel-body">
+                  
+                  <div class="row">
+                  <div class="col-md-8">
+                    <h2>The Year of Responsive Design.</h2>
+                    2013 was marked as the year of Responsive Web Design (RWD). The Web is filled with big brands, galleries and magical examples that media queries demonstrate the glory of responsive design.
+                    <br><br>
+                    <button class="btn btn-default">More</button>
+                  </div> 
+                  <div class="col col-sm-4">
+                    <a href="#"><img src="//placehold.it/300x120/77CCDD/66BBCC" class="img-responsive"></a>
+                    <div class="text-muted"><small>Aug 15 / John Pierce</small></div>
+                    <p>
+                    Web design has come a long way since 1999.
+                    </p>
+                    <hr>
+                    <a href="#"><img src="//placehold.it/300x120/77CCDD/66BBCC" class="img-responsive"></a>
+                    <div class="text-muted"><small>Aug 15 / Wilson Traiker</small></div>
+                    <p>
+                    The "flat" look was a big trend this year.
+                    </p>
+                  </div>   
+                </div>
+                
+                  
+                
+                  <hr>
+             	
+                  </div><!--/panel-body-->
+                </div><!--/panel-->
+              	<!--/end right column-->
+      	</div> 
+  	</div>
+</div>

@@ -8,10 +8,10 @@
  * Controller of the paveApp
  */
 angular.module('paveApp')
-  .controller('ResearchCtrl', function ($scope) {
-    $scope.awesomeThings = [
-      'HTML5 Boilerplate',
-      'AngularJS',
-      'Karma'
-    ];
+  .controller('ResearchCtrl', function ($scope,$location,Router,Staff) {
+
+    $scope.section = Router.getSection($location);
+    $scope.staff = Staff.getSection($location);
+
+
   });
