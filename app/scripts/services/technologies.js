@@ -18,7 +18,7 @@ angular.module('paveApp')
     {name:'Mobile Smartphone Applications'},
     {name:'Web-Based Interventions'},
     {name:'Context Sensing'},
-    {name:'Assessment'}
+    {name:'Assessment Tools'}
     ];
 
     contents.filter = function(objectFilter){

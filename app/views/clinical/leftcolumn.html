@@ -1,0 +1,22 @@
+<div class="panel panel-default" id="sidebar">
+    <div class="panel-heading" style="background-color:#888;color:#fff;"></div>
+    <div class="panel-body">
+
+        <ul class="nav nav-stacked">
+            <li><a ng-repeat="item in section.routes" ng-href="#/{{section.label}}/{{item.label}}">
+        {{item.name}}<br/><small> {{item.tagline}}</small>
+       </a>
+            </li>
+        </ul>
+        <hr>
+
+        <div class="col col-span-12">
+            <i class="icon-2x icon-facebook"></i>&nbsp;
+            <i class="icon-2x icon-twitter"></i>&nbsp;
+            <i class="icon-2x icon-linkedin"></i>&nbsp;
+            <i class="icon-2x icon-pinterest"></i>
+        </div>
+
+    </div>
+    <!--/panel body-->
+</div>

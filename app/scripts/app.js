@@ -66,6 +66,10 @@ angular
         templateUrl: 'views/clinical.html',
         controller: 'ClinicalCtrl'
       })
+      .when('/features', {
+        templateUrl: 'views/features.html',
+        controller: 'FeaturesCtrl'
+      })
       .otherwise({
         redirectTo: '/'
       })

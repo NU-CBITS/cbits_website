@@ -1,0 +1,30 @@
+<div class="panel" id="midCol">
+    <div class="panel-heading" style="background-color:#555;color:#eee;">{{currentSection}}</div>
+    <div class="panel-body">
+        <div ng-switch="subRoute()">
+            <div ng-switch-when="home">
+                <div class="well" ng-bind-html="featureContent">
+                </div>
+            </div>
+            <div ng-switch-when="projects">
+                <h4>{{sectionLabel}}</h4>
+                <span ng-repeat="item in tags">   
+                    <input name="tags" value="{{item.id}}"> {{item.name}}
+                </span>
+            </div>
+
+            <div ng-switch-default>    
+                <ul class="nav nav-stacked">
+                    <li><a ng-repeat="subItem in selectedContents()" ng-click="showContent('{{subItem.name}}')">
+                          {{subItem.name}}<br/><small>{{subItem.tagline}}</small>
+                         </a>
+                    </li>
+                </ul>
+            </div>
+        </div>
+        <div ng-show="showTeam">
+            <h3>Our Team</h3>
+            <h5 ng-repeat="person in staff"><a ng-click='personModal()'><i class="glyphicon glyphicon-user"></i> {{person.firstName}} {{person.lastName}}</a></h5>
+        </div>
+    </div>
+</div>

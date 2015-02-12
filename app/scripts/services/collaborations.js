@@ -2,26 +2,24 @@
 
 /**
  * @ngdoc service
- * @name paveApp.problems
+ * @name paveApp.collaborations
  * @description
- * # problems
+ * # collaborations
  * Service in the paveApp.
  */
 angular.module('paveApp')
-  .service('Problems', function () {
+  .service('Collaborations', function () {
     // AngularJS will instantiate a singleton by calling "new" on this function
+
+
 
     var contents = {};
 
     contents.items = [
-    {name:'Bipolar Disorder'},
-    {name:'Depression'},
-    {name:'Anxiety'},
-    {name:'Skin Cancer Prevention'},
-    {name:'Transplant Management'},
-    {name:'Aphasia'},
-    {name:'Patient Management'},
-    {name:'Medication Management'}
+    {name:'Grant Assistance',tagline:'want to write a grant?', content:'<h2>Need help writing a technology-assisted grant?</h2>'},
+    {name:'eHealth / mHealth Application Development', content:''},
+    {name:'Research Management Applications'},
+    {name:'Assessment Tool Development'}
     ];
 
     contents.filter = function(objectFilter){
@@ -29,7 +27,5 @@ angular.module('paveApp')
     }
 
     return contents
-
-
 
   });
