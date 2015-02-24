@@ -35,7 +35,6 @@ angular.module('paveApp')
     		routes:[
     		{ label:'home',name:'Home', tagline:'', icon:''},
             { label:'people',name:'People', tagline:'', icon:''}
-
     	]}
     ];
 
